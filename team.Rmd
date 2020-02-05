@@ -12,6 +12,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 library(ggplot2)
 choco <- read.csv("https://xdaiisu.github.io/ds202materials/hwlabs/choco.csv")
+head(choco)
 ```
 
 ## 1.) 1852
@@ -43,6 +44,11 @@ summary(choco)
 ### USA(787), France(158), Canada(132)
 
 ## 4.)
+
+- Is there a correlation between each individual company, the countries that each company uses, and the respective rating?
+- Is there a correlation between Review Date and the Rating?
+- Is there a correlation between the cocoa percentage and the country of origin?
+- Is there a correlation between the cocoa percentage and the company or origin?
 
 ## 5.)
 
