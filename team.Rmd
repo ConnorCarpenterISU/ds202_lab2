@@ -10,6 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ```{r}
+library(ggplot2)
 choco <- read.csv("https://xdaiisu.github.io/ds202materials/hwlabs/choco.csv")
 ```
 
@@ -36,9 +37,13 @@ ggplot(choco, aes(x=Review.Date))+
 
 ## 3.)
 
+```{r}
+summary(choco)
+```
+### USA(787), France(158), Canada(132)
+
 ## 4.)
 
 ## 5.)
 
 ## 6.)
-
