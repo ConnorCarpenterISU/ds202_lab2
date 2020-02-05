@@ -1,0 +1,31 @@
+---
+title: "DS 202 - Lab 2"
+author: "Connor Carpenter"
+date: "2/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+choco <- read.csv("https://xdaiisu.github.io/ds202materials/hwlabs/choco.csv")
+head(choco)
+```
+
+```{r}
+hist(choco$Rating)
+## left skewed with a mean around 3.2
+```
+```{r}
+boxplot(choco$Rating)
+## there are some outliers
+```
+
+
+```{r}
+plot(choco$Rating, choco$Cocoa.Pct)
+## there seems to be an insignificant relationship between cocoa % and rating
+```
+
