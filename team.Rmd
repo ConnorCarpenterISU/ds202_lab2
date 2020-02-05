@@ -1,0 +1,34 @@
+---
+title: 'DS 202 - Lab 2: Team'
+author: "Connor Carpenter"
+date: "2/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+choco <- read.csv("https://xdaiisu.github.io/ds202materials/hwlabs/choco.csv")
+```
+
+1.) 1852
+2.) 
+```{r}
+ggplot(choco, aes(x=Review.Date))+ 
+  geom_bar(fill = "blue", colour = "black")+
+  theme_bw()+
+  theme(axis.title.y = element_text(size = rel(1.4)),
+        axis.title.x = element_text(size = rel(1.4)),
+        axis.text.x = element_text(size = rel(1.6)),
+        axis.text.y = element_text(size = rel(1.6)),
+        plot.title = element_text(hjust=0.5, size = rel(2)))+
+  labs(x = "Review Date",
+       y = "Count",
+       title = "Count of Reviews by Year")+ 
+  ylim(0, 300)
+## Reviews vary by year
+```
+```
+
