@@ -48,8 +48,19 @@ summary(choco)
 - Is there a correlation between each individual company, the countries that each company uses, and the respective rating?
 - Is there a correlation between Review Date and the Rating?
 - Is there a correlation between the cocoa percentage and the country of origin?
-- Is there a correlation between the cocoa percentage and the company or origin?
+- Is there a correlation between the cocoa percentage and the company of origin?
 
 ## 5.)
+
+### Is there a correlation between the cocoa percentage and the company of origin?
+
+```{r}
+choco$Company.Index <- match(choco$Company, unique(choco$Company))
+plot(choco$Company.Index, choco$Cocoa.Pct)
+```
+
+There's a suspiciously high number of chocolate bars made with 25% cocoa among all companies
+
+But otherwise there isn't really much of a relationship.
 
 ## 6.)
