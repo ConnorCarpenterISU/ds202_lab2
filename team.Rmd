@@ -13,9 +13,11 @@ knitr::opts_chunk$set(echo = TRUE)
 choco <- read.csv("https://xdaiisu.github.io/ds202materials/hwlabs/choco.csv")
 ```
 
-1.) 1852
-2.) 
+## 1.) 1852
+
+## 2.) 
 ```{r}
+library(ggplot2)
 ggplot(choco, aes(x=Review.Date))+ 
   geom_bar(fill = "blue", colour = "black")+
   theme_bw()+
@@ -28,7 +30,15 @@ ggplot(choco, aes(x=Review.Date))+
        y = "Count",
        title = "Count of Reviews by Year")+ 
   ylim(0, 300)
-## Reviews vary by year
 ```
-```
+
+**Reviews vary by year**
+
+## 3.)
+
+## 4.)
+
+## 5.)
+
+## 6.)
 
