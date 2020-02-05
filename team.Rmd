@@ -42,6 +42,16 @@ ggplot(choco, aes(x=Review.Date))+
 summary(choco)
 ```
 ### USA(787), France(158), Canada(132)
+```{r}
+##USA
+mean(choco[choco$Company.Location == "U.S.A.", ]$Rating)
+##FRANCE
+mean(choco[choco$Company.Location == "France", ]$Rating)
+##CANADA
+mean(choco[choco$Company.Location == "Canada", ]$Rating)
+
+```
+### Canada has highest, followed by France, and then USA
 
 ## 4.)
 
